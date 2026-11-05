@@ -1,0 +1,41 @@
+[2026-11-01 04:06:42 UTC] xrun -Q -unbuffered '-timescale' '1ns/1ns' '-sysv' '-access' '+rw' design.sv testbench.sv  
+TOOL:	xrun	25.03-s001: Started on Nov 01, 2026 at 00:06:42 EDT
+xrun: 25.03-s001: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+	Top level design units:
+		tb_digital_parking
+Loading snapshot worklib.tb_digital_parking:sv .................... Done
+xcelium> source /xcelium25.03/tools/xcelium/files/xmsimrc
+xcelium> run
+DIGITAL PARKING SYSTEM - CAPACITY 8
+16000 rst=1 in=0 out=0 used=0 free=8 full=0 empty=1 grants=00
+26000 rst=0 in=0 out=1 used=0 free=8 full=0 empty=1 grants=00
+36000 rst=0 in=1 out=1 used=1 free=7 full=0 empty=0 grants=10
+46000 rst=0 in=0 out=0 used=1 free=7 full=0 empty=0 grants=00
+56000 rst=0 in=1 out=0 used=2 free=6 full=0 empty=0 grants=10
+66000 rst=0 in=1 out=0 used=3 free=5 full=0 empty=0 grants=10
+76000 rst=0 in=1 out=0 used=4 free=4 full=0 empty=0 grants=10
+86000 rst=0 in=1 out=0 used=5 free=3 full=0 empty=0 grants=10
+96000 rst=0 in=1 out=0 used=6 free=2 full=0 empty=0 grants=10
+106000 rst=0 in=1 out=0 used=7 free=1 full=0 empty=0 grants=10
+116000 rst=0 in=1 out=0 used=8 free=0 full=1 empty=0 grants=10
+126000 rst=0 in=1 out=0 used=8 free=0 full=1 empty=0 grants=00
+136000 rst=0 in=1 out=1 used=8 free=0 full=1 empty=0 grants=11
+146000 rst=0 in=0 out=1 used=7 free=1 full=0 empty=0 grants=01
+156000 rst=0 in=0 out=1 used=6 free=2 full=0 empty=0 grants=01
+166000 rst=0 in=0 out=1 used=5 free=3 full=0 empty=0 grants=01
+176000 rst=0 in=0 out=1 used=4 free=4 full=0 empty=0 grants=01
+186000 rst=0 in=0 out=1 used=3 free=5 full=0 empty=0 grants=01
+196000 rst=0 in=0 out=1 used=2 free=6 full=0 empty=0 grants=01
+206000 rst=0 in=0 out=1 used=1 free=7 full=0 empty=0 grants=01
+216000 rst=0 in=0 out=1 used=0 free=8 full=0 empty=1 grants=01
+226000 rst=0 in=0 out=1 used=0 free=8 full=0 empty=1 grants=00
+236000 rst=0 in=1 out=0 used=1 free=7 full=0 empty=0 grants=10
+246000 rst=1 in=1 out=1 used=0 free=8 full=0 empty=1 grants=00
+PASS: all 36 occupancy/request combinations
+PASS: reset, full, empty, replacement and idle
+PASS: 242 checked clock cycles
+ALL TESTS PASSED
+Simulation complete via $finish(1) at time 2426 NS + 0
+./testbench.sv:103         $finish;
+xcelium> exit
+TOOL:	xrun	25.03-s001: Exiting on Nov 01, 2026 at 00:06:43 EDT  (total: 00:00:01)

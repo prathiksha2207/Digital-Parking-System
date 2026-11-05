@@ -1,0 +1,31 @@
+{
+  "playground": "",
+  "simulator": "Cadence Xcelium 25.03, xrun 25.03-s001",
+  "capture": "Full visible EDA Playground website area. Chrome tabs, address bar, bookmarks bar and Windows taskbar are cropped out.",
+  "result": "All 242 checked clock cycles passed, including all 36 occupancy and request combinations.",
+  "screenshot_run_utc": "2026-11-01 04:06:42",
+  "sources_verified": "Design matches the captured browser source after newline normalization. Testbench executable statements match the captured browser source after whitespace and comment normalization.",
+  "sha256": {
+    "rtl/digital_parking.v": "d784ea12ffa9c3efbd1ab29a0ab100ed2efd5550219ff9b996a5c213b50ff0b2",
+    "tb/tb_digital_parking.v": "9ae7e93a4d2e148dd88a6b86908e8ad04a8d834ba99e01dfc4652c899462759c",
+    "sim/output.txt": "e57aff106edfd6b11ed9ac71a8a50ea7352ae4ccf9cde69f6328bea478babb96",
+    "sim/simulation.log": "c69f65e30b3c0fc8d8bed3763280157e47795e184cfc2c316a4c025e4af02e89",
+    "sim/xrun.log": "0ffd69ffe5e024fbcf57e4864d11637c6bf4f5019581da0309af0984d3d08f13",
+    "images/eda-playground-waveform.png": "69904fc830101fa79720f9cfa148c9edfaf6a7a653ae64327cf1c2fb25c1ff69",
+    "images/eda-playground-output.png": "aab979b5b921ae1610912e8a19aed9dfbd5b274587435d080bf5168e3586c325"
+  },
+  "crop_rectangles_xywh": {
+    "images/eda-playground-waveform.png": [
+      0,
+      138,
+      1920,
+      894
+    ],
+    "images/eda-playground-output.png": [
+      0,
+      138,
+      1920,
+      894
+    ]
+  }
+}
